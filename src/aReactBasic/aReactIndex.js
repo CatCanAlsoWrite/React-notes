@@ -386,7 +386,9 @@ or copy settings in https://github.com/john-smilga/VS-CODE-SETUP/blob/master/set
 empty 'src' folder except 'index.js', 
 empty the content in 'index.js',
 ctrl+b, `open/close sidebar`,
+*/
 
+/*build
 index.js,
 do sth,
 
@@ -397,9 +399,31 @@ do sth,
 5.serve -s build
 6.drag 'build' folder into https://app.netlify.com/teams/catcanalsowrite/sites
 7.site setting, change site name `then can share the site`https://react-homework-johnsmilga.netlify.app/
+8.ctrl+l(clear command line)
 
 update build:
 1.npm run build,
 2.serve -s build,
 3.drag 'build' folder into https://app.netlify.com/sites/react-homework-johnsmilga/deploys?filter
+*/
+
+/*test
+1.npm i jest,
+2."scripts": { "test": "jest" },
+3.in 'xx-fileName.js'
+```
+function sum(a, b) {
+  return a + b;
+}
+module.exports = sum; //`instead of 'export {sum}'`
+```
+4.in 'xx-fileName.test.js'
+```
+const sum= require './folder/xx-fileName.js'
+
+test('add 1+2 to equal 3',()=>{
+  expect(sum(1, 2)).toBe(3)
+})
+```
+3.npm run test
 */
